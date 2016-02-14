@@ -31,11 +31,11 @@
         <fieldset>
           <legend>Contact Info</legend>
         <div>
-          <label>Name</label>
+          <label> </label>
           <input type="text" name="name" value="your name">
         </div>
         <div>
-          <label>Email</label>
+          <label> </label>
           <input type="email" name="email" value="your email">
         </div>
         <div>
@@ -55,8 +55,48 @@
         <fieldset>
           <legend>Your Review</legend>
         <div>
-          <label>Comment</label>
-          <input type="text" name="comment" value="your comment" size="50">
+          <label>You are reviewing:</label>
+          <select name="coffee-shop">
+            <option value="Blueprint Coffee">Blueprint Coffee</option>
+            <option value="Breve Espresso Cafe">Breve Espresso Cafe</option>
+            <option value="Café Ventana">Café Ventana</option>
+            <option value="City Coffeehouse & Crêperie">City Coffeehouse & Crêperie</option>
+            <option value="Comet Coffee & Microbakery">Comet Coffee & Microbakery</option>
+            <option value="Companion">Companion</option>
+            <option value="Einstein Bros. Bagels ">Einstein Bros. Bagels </option>
+            <option value="Foundation Grounds">Foundation Grounds</option>
+            <option value="Half & Half">Half & Half</option>
+            <option value="Kaldi's Coffeehouse">Kaldi's Coffeehouse</option>
+            <option value="Kayak's">Kayak's</option>
+            <option value="Living Room">Living Room</option>
+            <option value="Meshuggah">Meshuggah</option>
+            <option value="Mokabe's Coffeehouse">Mokabe's Coffeehouse</option>
+            <option value="Northwest Coffee Roasting Company">Northwest Coffee Roasting Company</option>
+            <option value="Peet's Coffee and Tea">Peet's Coffee and Tea</option>
+            <option value="Soulard Coffee Garden">Soulard Coffee Garden</option>
+            <option value="Stone Spiral Coffee & Curios">Stone Spiral Coffee & Curios</option>
+            <option value="Sump Coffee">Sump Coffee</option>
+            <option value="The Patio Cafe">The Patio Cafe</option>
+            <option value="Whispers">Whispers</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label>If other:</label>
+          <input type="text" name "coffee-shop" value "other-shop"
+        </div>
+        <div>
+          <p>How would you rate this place?
+          <br />
+          <input type="radio" name="rating" value="1" check="checked" /> 1
+          <input type="radio" name="rating" value="2" check="checked" /> 2
+          <input type="radio" name="rating" value="3" check="checked" /> 3
+          <input type="radio" name="rating" value="4" check="checked" /> 4
+          <input type="radio" name="rating" value="5" check="checked" /> 5
+          </p>
+        </div>
+        <div>
+          <textarea name="review" cols="20" rows = "4">Enter you review here...</textarea>
         </div>
         <div>
           <input type="submit" value="Send">
@@ -81,7 +121,7 @@
             <th>Miles away</th>
           </tr>
           <tr>
-            <td> <a href="http://www.yelp.com/biz/einstein-bros-bagels-saint-louis-6?osq=Einstein+Bros+Bagels">Einstein Bagel Bros.</a></td>
+            <td> <a href="http://www.yelp.com/biz/einstein-bros-bagels-saint-louis-6?osq=Einstein+Bros+Bagels">Einstein Bros. Bagels </a></td>
             <td>$$</td>
             <td>4</td>
             <td>WashU</td>
