@@ -28,13 +28,15 @@
       <h2>Make a recommendation for your friends!</h2>
 
       <form action="//formspree.io/catalogwashu@yahoo.com" method="POST">
+        <fieldset>
+          <legend>Contact Info</legend>
         <div>
           <label>Name</label>
           <input type="text" name="name" value="your name">
         </div>
         <div>
           <label>Email</label>
-          <input type="text" name="mail" value="your email">
+          <input type="email" name="email" value="your email">
         </div>
         <div>
           <label>You are:</label>
@@ -49,7 +51,9 @@
           <option value="other">Other</option>
           </select>
         </div>
-        
+        </fieldset>
+        <fieldset>
+          <legend>Your Review</legend>
         <div>
           <label>Comment</label>
           <input type="text" name="comment" value="your comment" size="50">
@@ -59,7 +63,7 @@
         </div>
       </form>
     </div>
-      
+    </fieldset>
       <section class="list-items">
         <h3>Take a look at:</h3>
         <li><a href="#directory">Coffee Shop Directory</a></li>
